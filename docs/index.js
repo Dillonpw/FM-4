@@ -6,14 +6,12 @@ const submit = document.getElementById('submitBtn');
 const dismiss = document.getElementById('dismissBtn');
 const email = document.getElementById('email');
 const emailError = document.getElementById('emailError');
-const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailRegex =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-document.addEventListener("DOMContentLoaded", function() {
-    submission.style.display = 'none';
-});
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();  // Prevent default form submission always
+    event.preventDefault(); // Prevent default form submission always
     let isValid = true;
 
     if (email.value.trim() === '') {
@@ -37,4 +35,3 @@ dismiss.addEventListener('click', () => {
     submission.style.display = 'none';
     main.style.display = 'block';
 });
-

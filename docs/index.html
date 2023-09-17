@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
 
         <link
             rel="icon"
@@ -28,19 +27,19 @@
             Frontend Mentor | Newsletter sign-up form with success message
         </title>
     </head>
-    <body class="bg-primary d-flex justify-content-center align-items-center flex-column">
-
-    
-        <div id="main-content" class="bg-info container rounded-3">
+    <body
+        class="bg-primary d-flex justify-content-center align-items-center flex-column"
+    >
+        <div id="main-content" class="bg-info container rounded-3 m-0">
             <div class="row">
-                <div id="m-img" class="col-12 p-0">
-                    <img src="/docs/images/illustration-sign-up-mobile.svg" />
+                <div id="m-img" class="col-12 img-fluid">
+                    <embed src="/docs/images/illustration-sign-up-mobile.svg" />
                 </div>
                 <div
-                    class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center p-4"
+                    class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center p-1"
                 >
                     <h1 class="text-primary fs-1 fw-bold">Stay updated!</h1>
-                    <p class="text-primary">
+                    <p class="text-primary p-2">
                         Join 60,000+ product managers receiving monthly updates
                         on:
                     </p>
@@ -55,12 +54,16 @@
                         <li class="pr-2">And much more!</li>
                     </ul>
 
-                    <form novalidate>
+                    <form novalidate class="p-4">
                         <div class="d-flex align-items-center">
-                            <label class="text-primary fs-6 fw-bold" for="email">Email address</label>
-                            <div id="emailError" class="fs-6 fw-bold text-danger justify-content-end"></div>
+                            <label class="text-primary fs-6 fw-bold" for="email"
+                                >Email address</label
+                            >
+                            <div
+                                id="emailError"
+                                class="fs-6 fw-bold text-danger px-5"
+                            ></div>
                         </div>
-                        
 
                         <div class="row">
                             <div class="col-12 mb-3">
@@ -74,7 +77,8 @@
                             </div>
 
                             <div class="col-12">
-                                <button id="submitBtn"
+                                <button
+                                    id="submitBtn"
                                     class="btn btn-primary border rounded-2 w-100 py-2"
                                     type="submit"
                                 >
@@ -86,7 +90,7 @@
                 </div>
 
                 <div id="dt-img" class="col-lg-6 col-12">
-                    <img
+                    <embed
                         class="img-fluid p-3 rounded-3 p-4"
                         src="/docs/images/illustration-sign-up-desktop.svg"
                         alt="Sign Up Illustration"
@@ -96,11 +100,8 @@
         </div>
         <!-- Success message start -->
 
-        <div
-            id="submission"
-            class="rounded-3 d-flex flex-column justify-content-start align-items-start p-4"
-        >
-            <img src="/docs/images/icon-success.svg" height="45px" />
+        <div id="submission" class="rounded-3 p-4">
+            <embed src="/docs/images/icon-success.svg" height="45px" />
             <h1 class="fw-bold py-4 fs-1">Thanks for subscribing!</h1>
             <p>
                 A confirmation email has been sent to
@@ -108,7 +109,12 @@
                 open it and click the button inside to confirm your
                 subscription.
             </p>
-            <button id="dismissBtn"class="btn btn-primary border rounded-2 w-100 py-2">Dismiss message</button>
+            <button
+                id="dismissBtn"
+                class="btn btn-primary border rounded-2 w-100 py-2"
+            >
+                Dismiss message
+            </button>
         </div>
 
         <!-- Success message end -->
@@ -116,11 +122,17 @@
         <div class="attribution">
             <p class="text-info">
                 Challenge by
-                <a class="text-decoration-none"
+                <a
+                    class="text-decoration-none"
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
                     >Frontend Mentor</a
-                >. Coded by <a class="text-decoration-none" href="https://github.com/Dillonpw">Dillonpw</a>.
+                >. Coded by
+                <a
+                    class="text-decoration-none"
+                    href="https://github.com/Dillonpw"
+                    >Dillonpw</a
+                >.
             </p>
         </div>
         <script src="index.js"></script>
