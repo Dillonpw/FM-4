@@ -68,6 +68,10 @@ h1{
     margin: 0% !important;
 }
 
+input:invalid{
+    border:red
+}
+
 body #submission {
     max-width: 400px !important;
     display: none;
